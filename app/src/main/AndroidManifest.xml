@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.madriaga_velasquez_iot_ev3">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Madriaga_Velasquez_IOT_EV3">
+        <activity
+            android:name=".ui.activity.recuperarpass"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.mostraruser"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.eliminarusuario"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.cambiarcontrasena"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.mostrareventos"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.agregareventos"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.menu"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.registrousuario"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

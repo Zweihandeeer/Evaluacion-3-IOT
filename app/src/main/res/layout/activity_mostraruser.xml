@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.mostraruser">
+
+    <TextView
+        android:id="@+id/tvGuardadom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="Usuario Guardado"
+        android:textAlignment="center"
+        android:textColor="@color/teal_700"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvUsuariom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvGuardadom"
+        app:layout_constraintStart_toStartOf="@+id/tvGuardadom"
+        app:layout_constraintTop_toBottomOf="@+id/tvGuardadom" />
+
+    <TextView
+        android:id="@+id/tvContrasenam"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvGuardadom"
+        app:layout_constraintStart_toStartOf="@+id/tvGuardadom"
+        app:layout_constraintTop_toBottomOf="@+id/tvUsuariom" />
+
+    <TextView
+        android:id="@+id/tvVerFecham"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvGuardadom"
+        app:layout_constraintStart_toStartOf="@+id/tvGuardadom"
+        app:layout_constraintTop_toBottomOf="@+id/tvContrasenam" />
+
+    <TextView
+        android:id="@+id/tvPreguntaSecretam"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvGuardadom"
+        app:layout_constraintStart_toStartOf="@+id/tvGuardadom"
+        app:layout_constraintTop_toBottomOf="@+id/tvVerFecham" />
+
+    <TextView
+        android:id="@+id/tvRespuestam"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:inputType="textMultiLine"
+        android:maxEms="50"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/tvGuardadom"
+        app:layout_constraintStart_toStartOf="@+id/tvGuardadom"
+        app:layout_constraintTop_toBottomOf="@+id/tvPreguntaSecretam" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/tvGuardadom"
+        app:layout_constraintStart_toStartOf="@+id/tvGuardadom"
+        app:layout_constraintTop_toBottomOf="@+id/tvRespuestam">
+
+        <Button
+            android:id="@+id/btnAtras"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="Atras" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
